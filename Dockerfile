@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.source https://github.com/serengil/deepface
 # -----------------------------------
 # create required folder
 RUN mkdir -p /app && chown -R 1001:0 /app
-RUN mkdir /app/deepface
+RUN mkdir -p /app/deepface && chown -R 1001:0 /app/deepface
 
 
 
